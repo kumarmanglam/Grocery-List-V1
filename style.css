@@ -1,0 +1,110 @@
+*,
+::before,
+::after{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f1f5f8;
+  display: grid;
+  justify-content: center;
+}
+.container{
+  margin-top: 150px;
+  background-color: white;
+  width: 600px;
+  box-shadow: 0 0 15px #adadad;
+  border-radius: 15px;
+}
+ul{
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: auto;
+}
+.get-item{
+  padding:10px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+#input-item{
+  width: 70%;
+  border: 1px solid #063251;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #e9f2f8;
+}
+
+li{
+  min-width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  padding-inline: 80px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  font-family:monospace;
+  color: #7a7a7a
+}
+.item:hover{
+  background-color: #adadad;
+}
+h1{
+  font-family: sans-serif;
+  letter-spacing: 4px;
+  font-size: 2rem;
+  color: #063251;
+  padding: 1rem;
+  text-align: center;
+  padding: 30px 0;
+}
+input[type="text"] {
+  font-family:monospace; /* Replace with your desired font family */
+}
+#addBtn{
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 1px solid #063251;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.2s all linear;
+  letter-spacing: 1px;
+  font-family:monospace;
+}
+#addBtn:hover{
+  background-color: #063251;
+  color: white;
+}
+.delBtn{
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+.delBtn:hover{
+  color: red
+}
+.clear-item{
+  border: none;
+  background-color: transparent;
+  color: red;
+  font-family: monospace;
+  cursor: pointer;
+}
+.clear-div{
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+}
+
+@media screen  and (max-width:700px){
+  body{
+    place-items: center;
+  }
+  .container{
+    min-width: 80vw;
+    width: 100px;
+  }
+}
